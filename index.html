@@ -20,6 +20,40 @@
     border-bottom: #008ed6 3px solid;
     opacity: 0.8;
   }
+
+  #home-section
+  {
+    background-image: url('https://images.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+  }
+
+  #home-section  .home-inner
+  {
+    padding-top: 150px;
+  }
+
+  #home-section  .dark-overlay
+  {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 700px;
+  }
+
+  #home-section  .card-trans
+  {
+    opacity:0.8;
+  }
+
+  #home-section  .fa{
+    background-color: #fff;
+    color: #008ed6;
+    padding: 4px;
+    border-radius: 5px;
+    font-size:30px;
+  }
+
   </style>
 </head>
 <body>
@@ -49,7 +83,8 @@
   </nav>
 
   <!--Home Section -->
-  <header id="home-section" style="margin-top: 80px;">
+  <header id="home-section">
+    <div class="dark-overlay">  <!-- The image is bright we wanna like cover it to reduce brightness -->
       <div class="home-inner">
         <div class="container">
           <div class="row">
@@ -84,7 +119,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card bg-primary">
+              <div class="card bg-primary mt-4 card-trans">  <!-- card-trans is my class -->
                 <div class="card-body text-center">
                   <h3>Sign Up Today</h3>
                   <p>Please fill out this form to register</p>
@@ -108,8 +143,8 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
+  </div>
   </header>
 
 
